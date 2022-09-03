@@ -16,9 +16,6 @@ function App() {
       setEmojies(response.data);
       setSearchedEmojis(response.data)
     });
-
-    setEmojies(data);
-      setSearchedEmojis(data)
    
   },[]);
 
@@ -29,7 +26,6 @@ function App() {
       emojis.map(emoji=>{
         if(emoji.name.trim().includes(e.target.value.trim().toLowerCase())){
           filtered.push(emoji);
-
         }
         setSearchedEmojis(filtered)
       })
